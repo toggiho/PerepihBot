@@ -64,4 +64,4 @@ async def send_message(message):
 		
 
 import asyncio
-asyncio.run(tgbot.polling())
+asyncio.run(tgbot.polling(non_stop=True, request_timeout=90))
